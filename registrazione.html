@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione MusicApp</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        #contenuto-registrazione {
+            height: 100vh;
+            background: #F5EBE0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .input {
+            padding: 15px 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input label {
+            padding: 15px 0 5px 0;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+            height: 30px;
+
+        }
+
+        .termini {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenuto-registrazione">
+        <h1>Registrazione MusicApp</h1>
+        <form onsubmit="alert('Registrazione inviata con successo')">
+            <div class="input">
+                <label for="Nome">Nome</label>
+                <input type="text" name="Nome" id="Nome" placeholder="Il tuo nome">
+                <label for="Cognome">Cognome</label>
+                <input type="text" name="Cognome" id="Cognome" placeholder="Il tuo congome">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="La tua mail">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <label for="datanascita">Data di nascita</label>
+                <input type="date" name="dataNascita" id="datanascita">
+                <label for="numerotelefono">Numero di Telefono</label>
+                <input type="number" name="NumeroTelefono" id="numerotelefono">
+            </div>
+            <div>
+                <h3>Seleziona i tuoi gusti musicali</h3>
+                <input type="checkbox" id="rock">
+                <label for="rock">Rock</label>
+                <input type="checkbox" id="jazz">
+                <label for="jazz">Jazz</label>
+                <input type="checkbox" id="rap">
+                <label for="rap">Rap</label>
+                <input type="checkbox" id="blues">
+                <label for="blues">Blues</label>
+                <input type="checkbox" id="metal">
+                <label for="metal">Metal</label>
+                <input type="checkbox" id="classica">
+                <label for="classica">Classica</label>
+                <input type="checkbox" id="elettronica">
+                <label for="elettronica">Elettronica</label>
+            </div>
+            <div class="termini">
+                <p>Accetti Termini e condizioni?</p>
+                <input type="radio" name="si" id="accettosi">
+                <label for="accetto">Accetto</label>
+                <input type="radio" name="si" id="accettono">
+                <label for="accettono">Non Accetto</label>
+            </div>
+            <div class="btn">
+                <button type="submit">Invia registrazione</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
